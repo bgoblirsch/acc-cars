@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    background-color: rgb(31, 31, 31);
+}
+
+.activelink {
+    border-style: solid;
+    border-color: white;
+}

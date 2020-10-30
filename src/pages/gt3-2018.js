@@ -31,7 +31,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___manufacturer], order: ASC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___manufacturer], order: ASC } filter: {frontmatter: {gt318: {eq: true}}}) {
       edges {
         node {
           id
@@ -46,7 +46,7 @@ export const query = graphql`
                       ...GatsbyImageSharpFluid
                   }
               }
-          }
+            }
           }
           fields {
             slug
