@@ -1,31 +1,36 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
 import CarList from "../components/carlist"
 import carStyles from "../components/car.module.css"
-import Manufacturer from "../components/manufacturer"
-import Make from "../components/make"
-import Engine from "../components/engine"
-import Class from "../components/class"
+import layoutStyles from "../components/layout.module.css"
+import Nav from "../components/nav"
+import Ad from "../components/ad"
 
-export default function Home({ data }) {
+const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+export default function Gt3I({ data }) {
   console.log(data)
   console.log(data.allMarkdownRemark.edges.length)
   return (
-    <Layout>
-      <CarList>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link key={node.id} to={node.fields.slug} className={carStyles.car}>
-              <Img fluid={node.frontmatter.image.childImageSharp.fluid}></Img>
-              <Manufacturer>{node.frontmatter.manufacturer}</Manufacturer>
-              <Make>{node.frontmatter.make}</Make>
-              <Engine>{node.frontmatter.engine}</Engine>
-              <Class>{node.frontmatter.class}</Class>
-          </Link>
-        ))}
-      </CarList>
-    </Layout>
+    <div className={layoutStyles.layout}>
+      <Nav></Nav>
+      <div className={ width > height ? layoutStyles.landscape : layoutStyles.portrait }>
+        <CarList>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <Link key={node.id} to={node.fields.slug} className={carStyles.car}>
+                <Img fluid={node.frontmatter.image.childImageSharp.fluid}></Img>
+                <span className={carStyles.manufacturer}>{node.frontmatter.manufacturer}</span>
+                <span className={carStyles.make}>{node.frontmatter.make}</span>
+                <span className={carStyles.engine}>{node.frontmatter.engine}</span>
+                <span className={carStyles.class}>{node.frontmatter.class}</span>
+            </Link>
+          ))}
+        </CarList>
+        <Ad></Ad>
+      </div>
+    </div>
   )
 }
 

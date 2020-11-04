@@ -1,5 +1,18 @@
-.carlist {
+.carlistPortrait {
     display: flex;
+    position: relative;
+    top: 61px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+
+.carlistLandscape {
+    display: flex;
+    position: relative;
+    top: 61px;
+    margin-right: 240px;
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;

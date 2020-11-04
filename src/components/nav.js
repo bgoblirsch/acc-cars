@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-
 import navStyles from "./nav.module.css"
 
 const activeLandscapeStyles = {
@@ -45,14 +44,14 @@ export default function Nav() {
   )
   return (
     <div className={navStyles.nav}>
-      <div className={navStyles.title}>
+      <Link to='/' className={navStyles.title}>
         <Img fixed={data.file.childImageSharp.fixed}></Img>
         { // If (landscape) -> (render full title) Else -> (render short title)
           width > height 
             ? <p>Assetto Corsa Competizione Car Specs</p>
             : <p>ACC Car Specs</p>
         }
-      </div>
+      </Link>
       {
         width > height
           ? <div className={navStyles.landscapeLinks}>
@@ -63,7 +62,7 @@ export default function Nav() {
             </div>
           : <details>
               <summary className={navStyles.filterSummary}>
-                Filter
+                Filter &#9660;
               </summary>
               <div className={navStyles.dropdown}>
                 <Link className={navStyles.navlink} activeStyle={activePortraitStyles} to='/'>All Cars</Link>
