@@ -7,8 +7,8 @@ import Ad from "../components/ad"
 import carStyles from "../components/car.module.css"
 import layoutStyles from "../components/layout.module.css"
 
-var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
 
 export default function Home({ data }) {
   return (

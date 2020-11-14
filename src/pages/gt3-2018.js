@@ -7,8 +7,8 @@ import layoutStyles from "../components/layout.module.css"
 import Nav from "../components/nav"
 import Ad from "../components/ad"
 
-const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
 
 export default function Gt318({ data }) {
   const count = data.allMarkdownRemark.edges.length;
