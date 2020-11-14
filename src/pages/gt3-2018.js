@@ -11,6 +11,7 @@ const width = window.innerWidth || document.documentElement.clientWidth || docum
 const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 export default function Gt318({ data }) {
+  const count = data.allMarkdownRemark.edges.length;
   console.log(data)
   console.log(data.allMarkdownRemark.edges.length)
   return (
