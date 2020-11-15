@@ -1,12 +1,11 @@
 import React from "react"
 import carListStyles from "./carlist.module.css"
-
-const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
+import useWindowWidth from "../utils/windowsize"
 
 export default function CarList({ children }) {
+    const landscape = useWindowWidth();
     return (
-        <div className={ width > height ? carListStyles.carlistLandscape : carListStyles.carlistPortrait}>
+        <div className={ landscape ? carListStyles.carlistLandscape : carListStyles.carlistPortrait}>
             {children}
         </div>
     )

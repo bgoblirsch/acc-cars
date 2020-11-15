@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import navStyles from "./nav.module.css"
+import useWindowWidth from "../utils/windowsize"
 
 const activeLandscapeStyles = {
   border: "1px solid white",
@@ -20,10 +21,8 @@ const activePortraitStyles = {
   boxShadow: "0 0 10px rgba(255, 255, 255)"
 }
 
-const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
-
 export default function Nav() {
+  const landscape = useWindowWidth();
   const data = useStaticQuery(
     graphql`
       query {
@@ -47,13 +46,13 @@ export default function Nav() {
       <Link to='/' className={navStyles.title}>
         <Img fixed={data.file.childImageSharp.fixed}></Img>
         { // If (landscape) -> (render full title) Else -> (render short title)
-          width > height 
+          landscape
             ? <p>Assetto Corsa Competizione Car Specs</p>
             : <p>ACC Car Specs</p>
         }
       </Link>
       {
-        width > height
+        landscape
           ? <div className={navStyles.landscapeLinks}>
               <Link className={navStyles.navlink} activeStyle={activeLandscapeStyles} to='/'>All Cars</Link>
               <Link className={navStyles.navlink} activeStyle={activeLandscapeStyles} to="/gt3-2018/">GT3 2018</Link>

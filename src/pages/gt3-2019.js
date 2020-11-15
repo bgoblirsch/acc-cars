@@ -6,17 +6,16 @@ import carStyles from "../components/car.module.css"
 import layoutStyles from "../components/layout.module.css"
 import Nav from "../components/nav"
 import Ad from "../components/ad"
-
-const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
+import useWindowWidth from "../utils/windowsize"
 
 export default function Gt319({ data }) {
+  const landscape = useWindowWidth();
   console.log(data)
   console.log(data.allMarkdownRemark.edges.length)
   return (
     <div className={layoutStyles.layout}>
       <Nav></Nav>
-      <div className={ width > height ? layoutStyles.landscape : layoutStyles.portrait }>
+      <div className={ landscape ? layoutStyles.landscape : layoutStyles.portrait }>
         <CarList>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Link key={node.id} to={node.fields.slug} className={carStyles.car}>

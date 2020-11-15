@@ -6,15 +6,14 @@ import Nav from "../components/nav"
 import Ad from "../components/ad"
 import carStyles from "../components/car.module.css"
 import layoutStyles from "../components/layout.module.css"
-
-const width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-const height = document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight;
+import useWindowWidth from "../utils/windowsize"
 
 export default function Home({ data }) {
+  const landscape = useWindowWidth();
   return (
     <div className={layoutStyles.layout}>
       <Nav></Nav>
-      <div className={ width > height ? layoutStyles.landscape : layoutStyles.portrait }>
+      <div className={ landscape ? layoutStyles.landscape : layoutStyles.portrait }>
         <CarList>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Link key={node.id} to={node.fields.slug} className={carStyles.car}>
