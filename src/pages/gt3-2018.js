@@ -13,7 +13,7 @@ export default function Gt318({ data }) {
   const count = data.allMarkdownRemark.edges.length;
   console.log(data)
   console.log(data.allMarkdownRemark.edges.length)
-  return (
+  return typeof window !== "undefined" && (
     <div className={layoutStyles.layout}>
       <Nav></Nav>
       <div className={ landscape ? layoutStyles.landscape : layoutStyles.portrait }>

@@ -10,7 +10,7 @@ import useWindowWidth from "../utils/windowsize"
 
 export default function Home({ data }) {
   const landscape = useWindowWidth();
-  return (
+  return typeof window !== "undefined" && (
     <div className={layoutStyles.layout}>
       <Nav></Nav>
       <div className={ landscape ? layoutStyles.landscape : layoutStyles.portrait }>

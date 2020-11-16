@@ -33,7 +33,7 @@ export default function Nav() {
         }
         file(relativePath: { eq: "acc-logo3.png" }) {
           childImageSharp {
-            fixed(width: 103, height: 87) {
+            fixed(width: 60, height: 51) {
             ...GatsbyImageSharpFixed
           }
       }
@@ -45,7 +45,7 @@ export default function Nav() {
     <div className={navStyles.nav}>
       <Link to='/' className={navStyles.title}>
         <Img fixed={data.file.childImageSharp.fixed}></Img>
-        { // If (landscape) -> (render full title) Else -> (render short title)
+        { // if (landscape == true) -> (render full title) Else -> (render short title)
           landscape
             ? <p>Assetto Corsa Competizione Car Specs</p>
             : <p>ACC Car Specs</p>
