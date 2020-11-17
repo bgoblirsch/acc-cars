@@ -7,10 +7,35 @@
     margin: 10px;
     flex-grow: 1;
     box-shadow: 0 0 15px rgba(150, 150, 150, 0.4);
+    font-size: 2vh;
 }
 
 .car:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255);
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 2px;
+}
+
+.manufacturer {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.make {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.engine {
+    position: absolute;
+    top: 32px;
+    left: 8px;
+}
+
+.class {
+    position: absolute;
+    top: 32px;
+    right: 8px;
 }

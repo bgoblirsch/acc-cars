@@ -21,4 +21,3 @@ link2: "https://en.wikipedia.org/wiki/Nissan_GT-R#GT-R_Nismo_GT3"
 
 ---
 
-car info

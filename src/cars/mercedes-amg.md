@@ -21,4 +21,3 @@ link2: "https://www.caranddriver.com/reviews/a15101465/mercedes-amg-gt3-race-car
 
 ---
 
-car info

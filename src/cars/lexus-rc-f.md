@@ -18,4 +18,3 @@ link: "https://en.wikipedia.org/wiki/Lexus_RC#IMSA"
 
 ---
 
-car info

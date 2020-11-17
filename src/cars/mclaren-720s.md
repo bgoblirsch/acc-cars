@@ -18,4 +18,3 @@ link2: "https://www.conceptcarz.com/s27962/mclaren-720s-gt3.aspx"
 
 ---
 
-car info

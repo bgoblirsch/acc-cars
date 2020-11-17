@@ -19,4 +19,3 @@ link: "https://www.lamborghini.com/en-en/motorsport/motorsport-models/hurac%C3%A
 
 ---
 
-car info
