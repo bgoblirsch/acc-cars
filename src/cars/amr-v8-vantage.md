@@ -19,5 +19,4 @@ link: "https://www2.astonmartin.com/en/racing/race-cars/vantage-gt3"
 
 ---
 
-car info
-
+The Vantage GT3 has been designed from the ground up to offer customers the latest in race-car technology and embraces all the experience Aston Martin Racing has learnt from years of engineering and competing in international sports car racing with the DBR9, DBRS9 and the latest Vantage GTE.

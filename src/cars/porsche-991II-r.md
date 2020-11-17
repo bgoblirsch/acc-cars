@@ -23,4 +23,3 @@ link2: porsche-911II-r.pdf
 
 ---
 
-car info

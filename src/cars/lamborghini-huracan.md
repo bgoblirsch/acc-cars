@@ -19,4 +19,3 @@ link: "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n#Hurac%C3%A1n_GT3_(
 
 ---
 
-car info
