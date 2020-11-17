@@ -22,4 +22,3 @@ link: ""
 
 ---
 
-car info

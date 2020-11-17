@@ -36,11 +36,13 @@
 .filterSummary {
     display: block;
     margin-right: 35px;
+    font-size: 2.5vh;
 }
 
 .filterSummary:focus {
     outline: none;
 }
+
 
 .dropdown {
     display: flex;

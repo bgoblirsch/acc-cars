@@ -20,4 +20,3 @@ link: "https://hondanews.eu/eu/lv/cars/media/pressreleases/111343/honda-launches
 
 ---
 
-car info

@@ -22,4 +22,3 @@ link: "https://www.topspeed.com/cars/aston-martin/2012-aston-martin-vantage-gt3-
 
 ---
 
-car info
