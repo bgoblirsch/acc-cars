@@ -1,0 +1,41 @@
+.footerLandscape {
+    display: flex;
+    position: relative;
+    color: white;
+    height: 50px;
+    bottom: -15px;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    margin-right: min(250px);
+    margin-left: min(50px);
+    text-align: center;
+}
+
+.footerPortrait {
+    display: flex;
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0px 30px;
+    margin-bottom: 10px;
+    bottom: 80px;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.footerCar {
+    display: flex;
+    position: absolute;
+}
+
+.link {
+    margin-right: 40px;
+    color: white;
+}
+
+.span {
+    margin-left: 40px;
+}

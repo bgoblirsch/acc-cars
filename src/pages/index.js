@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import CarList from "../components/carlist"
 import Nav from "../components/nav"
+import Footer from "../components/footer"
 import Ad from "../components/ad"
 import carStyles from "../components/car.module.css"
 import layoutStyles from "../components/layout.module.css"
@@ -27,6 +28,7 @@ export default function Home({ data }) {
         </CarList>
         <Ad></Ad>
       </div>
+      <Footer></Footer>
     </div>
   )
 }

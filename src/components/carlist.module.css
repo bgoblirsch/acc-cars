@@ -12,11 +12,16 @@
     display: flex;
     position: relative;
     top: 61px;
+    margin: 10px;
+    margin-bottom: 40px;
     margin-right: 240px;
     justify-content: space-between;
     flex-wrap: wrap;
     color: white;
-    padding: 10px;
+    
 }
 
-
+.carlistLandscape:after {
+    content: '';
+    width: 50%;
+}

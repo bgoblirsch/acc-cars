@@ -10,9 +10,6 @@ import useWindowWidth from "../utils/windowsize"
 
 export default function Gt318({ data }) {
   const landscape = useWindowWidth();
-  const count = data.allMarkdownRemark.edges.length;
-  console.log(data)
-  console.log(data.allMarkdownRemark.edges.length)
   return typeof window !== "undefined" && (
     <div className={layoutStyles.layout}>
       <Nav></Nav>
