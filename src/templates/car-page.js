@@ -2,12 +2,11 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Nav from "../components/nav"
+import Footer from "../components/footer"
 import Ad from "../components/ad"
 import backStyles from "../components/back.module.css"
 import layoutStyles from "../components/layout.module.css"
 import useWindowWidth from "../utils/windowsize"
-
-
 
 export default function CarPage({ data }) {
   const car = data.markdownRemark;
@@ -113,6 +112,7 @@ export default function CarPage({ data }) {
           </div>
       }
       <Ad></Ad>
+      <Footer></Footer>
     </div>
   )
 }

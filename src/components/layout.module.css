@@ -16,7 +16,7 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    margin-bottom: 80px;
+    bottom: 80px;
     top: 40px;
 }
 
@@ -62,9 +62,11 @@
 
 .infoContainerPortrait {
     display: flex;
+    position: relative;
     flex-direction: column;
     top: 0;
     margin-top: 10px;
+    margin-bottom: 80px;
 }
 
 .specsContainerLandscape {

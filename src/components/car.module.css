@@ -1,7 +1,7 @@
 .car {
     position: relative;
     min-width: 200px;
-    width: 600px;
+    width: 40%;
     color: white;
     border: 2px solid transparent;
     margin: 10px;

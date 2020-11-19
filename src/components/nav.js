@@ -47,7 +47,7 @@ export default function Nav() {
         <Img fixed={data.file.childImageSharp.fixed}></Img>
         { // if (landscape == true) -> (render full title) Else -> (render short title)
           landscape
-            ? <p>Assetto Corsa Competizione Car Specs</p>
+            ? <p>Assetto Corsa Competizione<sup>&reg;</sup> Car Specs</p>
             : <p>ACC Car Specs</p>
         }
       </Link>
