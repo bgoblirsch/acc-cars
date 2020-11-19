@@ -1,6 +1,8 @@
 <p align="center">
   <a href="https://www.assettocorsa.net/competizione/">
-    <img alt="ACC-logo" src="https://www.assettocorsa.net/competizione/wp-content/themes/fosfostrap/_style/build/img/logo-acc-gtwc.png" width="60" />
+    <div style="background-color: black">
+      <img alt="ACC-logo" src="https://www.assettocorsa.net/competizione/wp-content/themes/fosfostrap/_style/build/img/logo-acc-gtwc.png" width="60" />
+    </div>
   </a>
 </p>
 <h1 align="center">
