@@ -2,7 +2,7 @@
   Assetto Corsa Competizione Car Specifications
 </h1>
 
-https://acc_cars.gtsb.io/
+[https://accars.netlify.app/](https://accars.netlify.app/)
 
 Since there is no car information in-game, and I could not find a collection of car specs anywhere online (for ACC or GT3 in general), I decided to gather the info myself and make my own site!
 
